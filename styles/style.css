@@ -13,6 +13,10 @@ body {
   background-attachment: fixed;
 }
 
+.theme-dark .page {
+  background-color: #000028;
+}
+
 h4 {
   font-size: inherit;
 }
@@ -333,7 +337,9 @@ section {
     grid-column: 2 / 3;
   }
 
-
+  .row_section:first-child {
+    padding-block-start: 60px;
+  }
 
   .concetration {
     display: block;
