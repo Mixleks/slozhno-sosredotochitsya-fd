@@ -1,10 +1,12 @@
 :root {
-  --text-color-header: #ffc2e6;
-  --accent-color: #ff8dcb;
-  --text-color-main: #353430;
-  --text-color-p: #353430;
-  --bg-color-main: #fff1f7;
-  --bg-image: url(../images/cover-image-light.png);
+  --accent-color:#FF0070;
+  --text-color-header: #DB00FF;
+  --main-font: 'IBM Plex mono', monospace;
+  --text-color-main:#000028;
+  --text-color-p:#F1B2CE;
+  --bg-color-main:#000028;
+  --accent-color-transp: rgba(255, 0, 112, 0.4);
+  --bg-image: url(../images/cover-image-dark.png);
   --text-size: 18px;
   --padding-section: 20px;
   --gap-main: 20px;
@@ -12,5 +14,6 @@
   --header-margin-top: 16%;
   --border-corner-size: 25px;
   --text-line-height: 23.4px;
-  --accent-color-transp: rgba(255, 0, 112, 0.5);
+  --button-color:#FF0070;
+  --color-caption:#FF0070;
 }
