@@ -118,7 +118,7 @@ section {
 .theme-auto .rec {
   position: absolute;
   top: 10px;
-  right: 18px;
+  right: 10px;
   font-size: 18px;
   color: var(--accent-color);
 }
@@ -127,18 +127,31 @@ section {
   display: none;
 }
 
-.theme-dark .rec::after,
-.theme-auto .rec::after {
+.rec::before {
+  position: absolute;
+  content: "REc";
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accent-color, #ff0070);
+  font-weight: 400;
+  line-height: 18px;
+  right: 28px;
+  font-style: normal;
+  font-size: 18px;
+  top: 3px;
+  font-family: var(--main-font, "IBM Plex Mono", monospace);
+}
+
+.rec::after {
+  position: absolute;
   content: "";
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  margin-left: 10px;
-  margin-bottom: 2px;
-  background-color: var(--accent-color);
+  top: 8px;
+  right: 9px;
   border-radius: 50%;
-  box-shadow: 0 0 5px var(--accent-color), 0 0 10px var(--accent-color),
-    0 0 15px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
+  background-color: var(--accent-color, #ff0070);
+  min-height: 9px;
+  min-width: 9px;
 }
 
 .header_p {
@@ -288,7 +301,7 @@ section {
   .theme-auto .rec {
     position: absolute;
     top: 20px;
-    right: 28px;
+    right: 20px;
   }
 
   .row_section {
@@ -321,9 +334,6 @@ section {
   }
 
 
-  .caption_text:nth-of-type(n + 1) {
-    padding-block-end: var(--padding-section);
-  }
 
   .concetration {
     display: block;
@@ -460,7 +470,7 @@ margin-block: 114px;
       flex-direction: column;
     }
 
-    .footer__title {
+    .footer .footer__title {
       padding: 319px 20px;
     }
   }
