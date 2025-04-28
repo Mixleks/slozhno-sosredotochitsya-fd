@@ -21,8 +21,8 @@ h4 {
 
 .header {
   position: relative;
-  min-height: 100vh;
-  min-block-size: 668px;
+  min-height: 668px;
+  height: 100vh;
   display: grid;
   grid-template-columns: auto;
   width: 100%;
@@ -237,7 +237,7 @@ section {
 .footer {
   position: relative;
   min-height: 668px;
-  min-height: 100vh;
+  height: 100vh;
   margin-block-start: 20px;
   background: var(--bg-color-main) no-repeat center/cover;
 }
