@@ -7,17 +7,16 @@
 :root.theme-light {
   --text-color-header: #ffc2e6;
   --accent-color: #ff8dcb;
-  --button-color:#353430;
+  --button-color: #353430;
   --text-color-main: #353430;
   --text-color-p: #353430;
   --bg-color-main: #fff1f7;
-  --accent-color-transp:#32312D66;
-  --color-caption:#353430;
+  --accent-color-transp: #32312d66;
+  --color-caption: #353430;
 }
 
 .theme-light .page {
   --bg-image: url(../images/cover-image-light.png);
-  --button-color:#353430;
   .rec {
     display: none;
   }
@@ -25,14 +24,14 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --color-caption:#353430;
-    --button-color:#353430;
+    --color-caption: #353430;
+    --button-color: #353430;
     --text-color-header: #ffc2e6;
     --accent-color: #ff8dcb;
     --text-color-main: #353430;
     --text-color-p: #353430;
     --bg-color-main: #fff1f7;
-    --accent-color-transp:#32312D66;
+    --accent-color-transp: #32312d66;
     --bg-image: url(../images/cover-image-light.png);
     .rec {
       display: none;

@@ -5,24 +5,20 @@
 */
 
 :root.theme-dark {
-  --accent-color:#FF0070;
-  --text-color-header: #DB00FF;
-  --main-font: 'IBM Plex mono', monospace;
-  --text-color-main:#000028;
-  --button-color:#FF0070;
-  --text-color-p:#F1B2CE;
-  --bg-color-main:#000028;
-  --accent-color-transp: rgba(255, 0, 112, 0.3);
+  --accent-color: #ff0070;
+  --text-color-header: #db00ff;
+  --text-color-main: #000028;
+  --button-color: #ff0070;
+  --text-color-p: #f1b2ce;
+  --bg-color-main: #000028;
+  --accent-color-transp: rgba(255, 0, 112, 0.4);
   --rec-on: inline-block;
-  --color-caption:#FF0070;
+  --color-caption: #ff0070;
 }
 
 .theme-dark .page {
   --bg-image: url(../images/cover-image-dark.png);
-  --button-color:#FF0070;
   .rec {
     display: inline-block;
   }
 }
-
-
