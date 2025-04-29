@@ -21,7 +21,7 @@ h4 {
 
 .header {
   position: relative;
-  min-height: 668px;
+  min-block-size: 668px;
   height: 100vh;
   display: grid;
   grid-template-columns: auto;
@@ -127,15 +127,6 @@ section {
   pointer-events: none;
 }
 
-.theme-dark .rec {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 18px;
-  color: var(--accent-color);
-  display: var(--rec-on);
-}
-
 .rec::before {
   position: absolute;
   content: "REc";
@@ -230,11 +221,14 @@ section {
   color: var(--text-color-header);
   text-shadow: 2px 2px 0 var(--accent-color);
   line-height: 83%;
-  padding: 285px 14px;
   text-align: center;
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   position: relative;
   min-height: 668px;
   height: 100vh;
@@ -249,22 +243,15 @@ section {
     width: 47.81vw;
     white-space: normal;
     margin-block: 163px;
+    height: fit-content;
   }
 
   .header {
-    position: relative;
-    display: block;
     padding: var(--padding-section);
+    min-block-size: 1024px;
   }
 
   .decorated-zone {
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      width: var(--border-corner-size);
-      height: var(--border-corner-size);
-    }
     &::before {
       top: 20px;
       right: 20px;
@@ -282,6 +269,7 @@ section {
   .header__theme-menu {
     margin-block-start: 172px;
   }
+
   .header_titel {
     padding-left: 0;
     margin-left: -20px;
@@ -387,7 +375,6 @@ section {
   }
 
   .cards img {
-    width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
@@ -424,8 +411,7 @@ section {
 
   .footer {
     margin-block-start: 40px;
-    min-height: 100vh;
-    position: relative;
+    min-height: 1024px;
   }
 }
 
@@ -439,6 +425,10 @@ section {
 
   .header_titel {
     margin-block-start: 273px;
+  }
+
+  .header {
+    min-block-size: 768px;
   }
 
   .header_p {
@@ -465,7 +455,7 @@ section {
     flex-direction: column;
   }
 
-  .footer .footer__title {
-    padding: 319px 20px;
+  .footer {
+    min-height: 768px;
   }
 }
